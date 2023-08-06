@@ -1,6 +1,7 @@
 package calculator.withTests;
+
 @org.springframework.stereotype.Service
-public class ServiceLogic implements Service{
+public class ServiceLogic implements Service {
     @Override
     public int summ(int num1, int num2) {
         return num1 + num2;

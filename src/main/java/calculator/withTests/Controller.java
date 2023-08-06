@@ -18,11 +18,13 @@ public class Controller {
     public String wellcome() {
         return "Добро пожаловать в калькулятор";
     }
+
     @GetMapping("/plus")
     public String sum(@RequestParam int num1, @RequestParam int num2) {
         int result = serviceLogic.summ(num1, num2);
         return response(num1, num2, result, '+');
     }
+
     @GetMapping("/minus")
     public String subtract(@RequestParam int num1, @RequestParam int num2) {
         int result = serviceLogic.subtract(num1, num2);
